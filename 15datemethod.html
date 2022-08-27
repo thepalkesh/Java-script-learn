@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Date Method</title>
+
+
+</head>
+
+<body>
+     <h1 id="res">
+
+     </h1>
+     <button onclick="getDate()">Date</button>
+     <button onclick="year()">Year</button>
+     <button onclick="month()">Month</button>
+     <button onclick="hours()">Hours</button>
+     <button onclick="todate()">Date</button>
+     <button onclick="day()">Day</button>
+     <button onclick="min()">Minutes</button>
+     <button onclick="time()">Time</button>    
+     <button onclick="sec()">second</button>
+     </body>
+     <script type="text/javascript">
+          var date = new Date();
+          function getDate() {
+               document.getElementById('res').innerText = date;
+          }
+
+          function year(){
+               document.getElementById('res').innerText = date.getFullYear();
+          } 
+
+          //month is created method
+          function month(){
+               var month = ["January","February","March","April","May","June","July",
+              "August","October","November","December"];
+               document.getElementById('res').innerText = month [date.getMonth()];
+          } 
+          function hours(){
+
+               document.getElementById('res').innerText = date.getHours();
+          } 
+          function todate(){
+
+               document.getElementById('res').innerText = date.getDate();
+          } 
+          function day(){
+
+               document.getElementById('res').innerText = date.getDay();
+          } 
+          function min(){
+
+               document.getElementById('res').innerText = date.getMinutes();
+          } 
+
+          //It Shows miliseconds
+          function time(){
+
+               document.getElementById('res').innerText = date.getTime();
+          } 
+          function sec(){
+
+               document.getElementById('res').innerText = date.getSeconds();
+          } 
+
+     </script>
+
+</html> 

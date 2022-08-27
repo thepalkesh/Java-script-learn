@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<script type="text/javascript">
+     var win;
+     var win2;
+     function openWin() {
+           win = window.open("https://www.google.com", 
+           "width=500px","height=500px");
+           win2 = window.open("");
+
+     }
+     function closeWin() { 
+          win.close();
+          win2.close();
+     }
+</script>
+
+<body>
+
+     <button onclick="openWin()">Open New Tab Link</button>
+     <button onclick="closeWin()">Close New Tab Link</button>
+</body>
+
+</html>

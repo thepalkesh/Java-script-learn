@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     
+<!-- Math Object Method
+1)Math.PI
+2)Math.round(x)
+3)Math.pow(x,y) // y is a power
+4)Math.sqrt(x)
+5)Math.abs(-x)
+6)Math.ceil(x)
+7)Math.floor(x)
+8)Math.min(x,y,z)
+9)Math.max(x,y,z)
+10)Math.random -->
+
+
+<button onclick="getOTP()">OTP</button>
+
+</body>
+
+<script type="text/javascript">
+  //var x = Math.round(3.6);
+  //document.write("<h1>"+x+"</h1>")
+
+
+  //random otp
+  function getOTP(){
+     var x = Math.random() * 10000;
+     alert(x);
+     var otp = Math.floor(x);
+     document.write(otp);
+
+  }
+
+</script>
+</html>
